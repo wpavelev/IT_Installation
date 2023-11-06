@@ -1,0 +1,33 @@
+﻿@page "/product"
+@namespace Pages
+<header>
+<h1>Product</h1>
+</header>
+<main>
+
+<section>
+    <table>
+        <tbody>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Typ</th>
+                <th>Preis in Euro</th>
+                <th>Bestand</th>
+            </tr>
+            @{
+                foreach (var product in ProductListModel)
+                {
+                    <tr>
+                        <td>@product.Id</td>
+                        <td>@product.Name</td>
+                        <td>@product.Type</td>
+                        <td>@product.Price</td>
+                        <td>@product.Stock</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</section>
+</main>

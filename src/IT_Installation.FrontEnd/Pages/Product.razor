@@ -1,0 +1,34 @@
+﻿@page "/product/{Id}"
+@namespace Pages
+
+<header>
+    <h1>Product</h1>
+</header>
+<main>
+    <section>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>@ProductModel.Name</td>
+                </tr>
+                <tr>
+                    <td>Bestand</td>
+                    <td>@ProductModel.Stock</td>
+                </tr>
+                <tr>
+                    <td>Supplier</td>
+                    <td>@ProductModel.Supplier.Name</td>
+                </tr>
+                <tr>
+                    <td>Art</td>
+                    <td>@ProductModel.Type</td>
+                </tr>
+                <tr>
+                    <td>Preis</td>
+                    <td>@ProductModel.Price</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>

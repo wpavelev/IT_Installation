@@ -1,0 +1,137 @@
+﻿/* Reset für die Standard-Stile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DDE6ED;
+}
+
+header {
+    background-color: #27374D;
+    color: #DDE6ED;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #DDE6ED;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    nav input[type="text"] {
+        margin: 5px;
+        padding: 10px;
+        width: 200px;
+        border: none;
+        border-radius: 4px;
+        background-color: #9DB2BF;
+        color: #27374D;
+    }
+
+    nav .Location {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        nav .Location input[type="text"] {
+            margin: 5px;
+            padding: 10px;
+            width: 150px;
+            border: none;
+            border-radius: 4px;
+            background-color: #9DB2BF;
+            color: #27374D;
+        }
+
+    nav .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav input[type="button"] {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #526D82;
+        color: #DDE6ED;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #27374D;
+    padding: 20px;
+    text-align: center;
+}
+
+    footer .options {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer input[type="button"] {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #526D82;
+        color: #DDE6ED;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.index-menu {
+    margin-top: 2rem;
+    display: flex;
+    font-size: 1.3em;
+}
+
+.index-menu-item {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    vertical-align: central;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.index-menu-item:hover {
+    border: solid 3px black;
+}
+
+    .index-menu-item:nth-child(even) {
+        background-color: darkslategrey;
+    }
+
+    .index-menu-item:nth-child(odd) {
+        background-color: dimgrey;
+    }
+
+tr {
+    padding: 10px;
+}
+
+button {
+    background-color: white;
+    border: none;
+    padding: 10px
+}

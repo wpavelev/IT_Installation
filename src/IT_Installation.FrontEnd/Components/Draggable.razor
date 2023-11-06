@@ -1,0 +1,8 @@
+﻿@using IT_Installation.FrontEnd.Services.Interface;
+@inject IMouseService mouseSrv;
+ 
+<g transform="translate(@x, @y)" cursor=@cursor @onmousedown=OnDown 
+    @onmousedown:stopPropagation="true">
+    @ChildContent
+</g>
+

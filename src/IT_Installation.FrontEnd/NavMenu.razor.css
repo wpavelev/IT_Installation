@@ -1,0 +1,53 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #DDE6ED;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .header a {
+        color: #27374D;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+        .header a.anmeldung {
+            font-size: 25px;
+            font-weight: bold;
+            margin-right: 1%;
+        }
+
+        .header a:hover {
+            background-color: #526D82;
+            color: #DDE6ED;
+        }
+
+        .header a.active {
+            background-color: #9DB2BF;
+            color: white;
+        }
+
+#header-Left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

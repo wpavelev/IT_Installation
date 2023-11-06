@@ -1,0 +1,32 @@
+﻿@page "/customer/{Id}"
+@namespace Pages
+
+<header>
+    <h1>Kunde Details: @KundeModel.Id</h1>
+</header>
+
+<section>
+    <input type="text" placeholder="Kunden ID" value="@KundeModel.Id" />
+    <input type="text" placeholder="Vorname" value="@KundeModel.Surname" />
+    <input type="text" placeholder="Nachname" value="@KundeModel.Lastname" />
+    <div class="Location">
+        <input type="text" placeholder="Plz" />
+        <input type="text" placeholder="Ort" />
+        <input type="text" placeholder="Straße" />
+        <input type="text" placeholder="Plz" />
+    </div>
+    <div class="buttons">
+        <input type="button" value="Suchen" />
+        <input type="button" value="Erstellen" />
+        <input type="button"
+               value="Erweiterte Suche"
+               onclick="toggleAdvancedSearch()" />
+    </div>
+</section>
+<footer>
+    <div class="options">
+        <input type="button" value="Ändern" />
+        <input type="button" value="Löschen" />
+    </div>
+</footer>
+

@@ -1,0 +1,26 @@
+﻿<div class="header">
+    <div id="header-Left">
+
+        <AuthorizeView>
+            <Authorized>
+                <a id="start" href="#">Start</a>
+                <a id="Kunden Übersicht" href="kunde">Kunden Übersicht</a>
+                <a id="lagerdaten" href="product">Lager</a>
+                <a id="Gebäudepläne" href="plan">Gebäudepläne</a>
+
+                @if (@context.User.Identity?.Name == "TestUser2")
+                {
+                    <a id="Netzwerkplan" href="/networkplan">Netzwerkplan</a>
+
+                }
+            </Authorized>
+            <NotAuthorized>
+               Warte auf Login!
+            </NotAuthorized>
+        </AuthorizeView>
+
+       
+    </div>
+
+    <LoginDisplay/>
+</div>

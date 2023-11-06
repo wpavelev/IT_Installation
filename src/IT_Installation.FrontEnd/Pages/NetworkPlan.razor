@@ -1,0 +1,113 @@
+﻿@using IT_Installation.FrontEnd.Services.Interface;
+@using IT_Installation.FrontEnd.Components;
+@page "/networkplan";
+
+@inject IMouseService mouseSrv;
+
+
+<div class="networkplan-frame">
+    <svg class="bg-light" width="100%" height="800px" xmlns="http://www.w3.org/2000/svg"
+    @onmousemove=@(e => mouseSrv.FireMove(this, e))
+    @onmouseup=@(e => mouseSrv.FireUp(this, e))
+    @onmouseleave=@(e => mouseSrv.FireLeave(this, e))>
+        <image xlink:href="Images/gebaeude.png" height="800" width="1000" />
+        <Draggable X="1200" Y="0">
+            <RouterComp>
+            </RouterComp>
+        </Draggable>
+        <Draggable X="1200" Y="0">
+            <RouterComp>
+            </RouterComp>
+        </Draggable>
+        <Draggable X="1200" Y="0">
+            <RouterComp>
+            </RouterComp>
+        </Draggable>
+        <Draggable X="1200" Y="0">
+            <RouterComp>
+            </RouterComp>
+        </Draggable>
+        <Draggable X="1200" Y="100">
+            <Switch>
+            </Switch>
+        </Draggable>
+        <Draggable X="1200" Y="100">
+            <Switch>
+            </Switch>
+        </Draggable>
+        <Draggable X="1200" Y="100">
+            <Switch>
+            </Switch>
+        </Draggable>
+        <Draggable X="1200" Y="100">
+            <Switch>
+            </Switch>
+        </Draggable>
+        <Draggable X="1200" Y="100">
+            <Switch>
+            </Switch>
+        </Draggable>
+        <Draggable X="1200" Y="200">
+            <WorkStation>
+            </WorkStation>
+        </Draggable>
+        <Draggable X="1200" Y="200">
+            <WorkStation>
+            </WorkStation>
+        </Draggable>
+        <Draggable X="1200" Y="200">
+            <WorkStation>
+            </WorkStation>
+        </Draggable>
+        <Draggable X="1200" Y="200">
+            <WorkStation>
+            </WorkStation>
+        </Draggable>
+        <Draggable X="1200" Y="200">
+            <WorkStation>
+            </WorkStation>
+        </Draggable>
+        <Draggable X="1200" Y="200">
+            <WorkStation>
+            </WorkStation>
+        </Draggable>
+        <Draggable X="1200" Y="200">
+            <WorkStation>
+
+            </WorkStation>
+        </Draggable>
+        <Draggable X="1200" Y="200">
+            <WorkStation>
+            </WorkStation>
+        </Draggable>
+        <Draggable X="1200" Y="200">
+            <WorkStation>
+            </WorkStation>
+        </Draggable>
+        <Draggable X="1200" Y="200">
+            <WorkStation>
+            </WorkStation>
+        </Draggable>
+        <Draggable X="1200" Y="200">
+            <WorkStation>
+            </WorkStation>
+        </Draggable>
+        <Draggable X="1200" Y="300">
+            <FireWall>
+            </FireWall>
+        </Draggable>
+        <Draggable X="1200" Y="300">
+            <FireWall>
+            </FireWall>
+        </Draggable>
+        <Draggable X="1200" Y="300">
+            <FireWall>
+            </FireWall>
+        </Draggable>
+    </svg>
+</div>
+
+@code {
+    double X = 290;
+    double Y = 250;
+}

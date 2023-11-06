@@ -1,0 +1,33 @@
+﻿@page "/customer"
+@namespace Pages
+
+<header>
+    <h1>Kunden Übersicht</h1>
+</header>
+
+<main>
+    <section>
+        <table>
+            <tbody>
+                <tr>
+                    <th>ID</th>
+                    <th>Vorname</th>
+                    <th>Nachnahme</th>
+                </tr>
+                @{
+                    foreach (var customer in CustomerListModel)
+                    {
+                        <tr>
+                            <td>@customer.Id</td>
+                            <td>@customer.Surname</td>
+                            <td>@customer.Lastname</td>
+                            <td><a href="kunde/@customer.Id">Details</a></td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </section>
+</main>
+
+
