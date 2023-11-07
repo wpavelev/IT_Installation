@@ -1,1 +1,1 @@
-A test project to connect a database with API and display with Blazor Wasm App.
+A test project to connect a database with an Dotnet API and display the Data with Blazor Wasm App.
