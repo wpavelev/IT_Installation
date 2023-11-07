@@ -1,0 +1,1 @@
+A test project to connect a database with API and display with Blazor Wasm App.
